@@ -1,0 +1,15 @@
+<mvc:View
+	controllerName="sap.ui.demo.nav.controller.visualisation.Visualisation"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page id="visualisationPage" title="{i18n>Visualisation}"
+		showNavButton="true"
+		navButtonPress="onNavBack"
+		class="sapUiResponsiveContentPadding">
+		<content>
+			<mvc:XMLView viewName="sap.ui.demo.nav.view.MenuPanel"/>
+			<Button id="ezittegygomb2" text="ez itt egy szoveg ezen a másik oldalt" press="onDisplayNotFound" class="sapUiTinyMarginEnd"/>
+			<Button id="homeBtn" text="{i18n>ShowHome}" press="onNavToHome" class="sapUiTinyMarginEnd"/>
+		</content>
+	</Page>
+</mvc:View>

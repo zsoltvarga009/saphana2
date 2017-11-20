@@ -1,0 +1,15 @@
+<mvc:View
+	controllerName="sap.ui.demo.nav.controller.MenuPanel"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Panel
+      class="sapUiResponsiveMargin"
+      width="auto" >
+		<content>
+			<Button icon="sap-icon://world" id="homeBtn" text="{i18n>ShowHome}" press="onNavToHome" class="sapUiTinyMarginEnd"/>
+			<Button icon="sap-icon://search" id="searchBtn" text="{i18n>ShowSearch}" press="onNavToSearch" class="sapUiTinyMarginEnd"/>
+			<Button icon="sap-icon://bar-chart" id="visualisationBtn" text="{i18n>ShowVisualisation}" press="onNavToVisualisation" class="sapUiTinyMarginEnd"/>
+			<Button icon="sap-icon://step" id="employeeListBtn" text="{i18n>ShowEmployeeList}" press="onNavToEmployees" class="sapUiTinyMarginEnd"/>
+		</content>
+	</Panel>
+</mvc:View>

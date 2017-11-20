@@ -1,0 +1,14 @@
+<mvc:View
+	controllerName="sap.ui.demo.nav.controller.search.Search"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Page id="searchPage" title="{i18n>Search}"
+		showNavButton="true"
+		navButtonPress="onNavBack"
+		class="sapUiResponsiveContentPadding">
+		<content>
+			<mvc:XMLView viewName="sap.ui.demo.nav.view.MenuPanel"/>
+			<Button id="ezittegygomb" text="ez itt egy szoveg" press="onDisplayNotFound" class="sapUiTinyMarginEnd"/>
+		</content>
+	</Page>
+</mvc:View>
