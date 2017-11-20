@@ -2,10 +2,19 @@
 	controllerName="sap.ui.demo.nav.controller.employee.EmployeeList"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
-	<Page id="employeeListPage" title="{i18n>EmployeeList}"
-		showNavButton="true"
-		navButtonPress="onNavBack"
-		class="sapUiResponsiveContentPadding">
+	<Page id="employeeListPage" title="{i18n>EmployeeList}">
+		<customHeader>
+			<Bar>
+				<contentLeft>
+				<Button icon="sap-icon://nav-back" id="navBack" press="onNavBack"/>
+				<mvc:XMLView viewName="sap.ui.unified.sample.MenuMenuEventing.MenuMenuEventing"/>
+				</contentLeft>
+				
+				<contentMiddle>
+				<Text text ="{i18n>EmployeeList}"></Text>
+				</contentMiddle>
+			</Bar>
+		</customHeader>
 		<content>
 			<mvc:XMLView viewName="sap.ui.demo.nav.view.MenuPanel"/>
 			<List id="employeeList" headerText="{i18n>ListOfAllEmployees}" items="{/Employees}">

@@ -2,14 +2,23 @@
 	controllerName="sap.ui.demo.nav.controller.visualisation.Visualisation"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
-	<Page id="visualisationPage" title="{i18n>Visualisation}"
-		showNavButton="true"
-		navButtonPress="onNavBack"
-		class="sapUiResponsiveContentPadding">
+	<Page id="visualisationPage" title="{i18n>Visualisation}">
+		<customHeader >
+			<Bar>
+				<contentLeft>
+				<Button icon="sap-icon://nav-back" id="navBack" press="onNavBack"/>
+				<mvc:XMLView viewName="sap.ui.unified.sample.MenuMenuEventing.MenuMenuEventing"/>
+				</contentLeft>
+				
+				<contentMiddle>
+				<Text text ="{i18n>Visualisation}"></Text>
+				</contentMiddle>
+			</Bar>
+		</customHeader>
 		<content>
 			<mvc:XMLView viewName="sap.ui.demo.nav.view.MenuPanel"/>
 			<Button id="ezittegygomb2" text="ez itt egy szoveg ezen a másik oldalt" press="onDisplayNotFound" class="sapUiTinyMarginEnd"/>
-			<Button id="homeBtn" text="{i18n>ShowHome}" press="onNavToHome" class="sapUiTinyMarginEnd"/>
+			<Text text="Visualisation"></Text>
 		</content>
 	</Page>
 </mvc:View>

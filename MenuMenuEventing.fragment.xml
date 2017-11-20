@@ -1,0 +1,27 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:u="sap.ui.unified">
+		<u:Menu
+		itemSelect="handleMenuItemPress">
+			<u:MenuItem
+				text="Home"
+				icon="sap-icon://home"/>
+			<u:MenuItem
+				text="Search"
+				icon="sap-icon://search"/>
+			<u:MenuItem
+				text="Visualisation"
+				icon="sap-icon://bar-chart">
+				<u:Menu>
+					<u:MenuItem
+						text="Visualisation"/>
+					<u:MenuItem
+						text="Itt nem tudom, hogy lesz-e valami" />
+				</u:Menu>
+			</u:MenuItem>
+			<u:MenuItem
+				text="Stream"
+				icon="sap-icon://step"/>
+		</u:Menu>
+</core:FragmentDefinition>

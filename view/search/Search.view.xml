@@ -2,13 +2,22 @@
 	controllerName="sap.ui.demo.nav.controller.search.Search"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
-	<Page id="searchPage" title="{i18n>Search}"
-		showNavButton="true"
-		navButtonPress="onNavBack"
-		class="sapUiResponsiveContentPadding">
+	<Page id="searchPage" title="{i18n>Search}">
+		<customHeader >
+			<Bar>
+				<contentLeft>
+				<Button icon="sap-icon://nav-back" id="navBack" press="onNavBack"/>
+				<mvc:XMLView viewName="sap.ui.unified.sample.MenuMenuEventing.MenuMenuEventing"/>
+				</contentLeft>
+				
+				<contentMiddle>
+				<Text text ="{i18n>Search}"></Text>
+				</contentMiddle>
+			</Bar>
+		</customHeader>
 		<content>
 			<mvc:XMLView viewName="sap.ui.demo.nav.view.MenuPanel"/>
-			<Button id="ezittegygomb" text="ez itt egy szoveg" press="onDisplayNotFound" class="sapUiTinyMarginEnd"/>
+			<Text text="Search"></Text>
 		</content>
 	</Page>
 </mvc:View>

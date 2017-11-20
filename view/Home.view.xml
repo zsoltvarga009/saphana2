@@ -2,10 +2,21 @@
 	controllerName="sap.ui.demo.nav.controller.Home"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
-	<Page title="{i18n>homePageTitle}" class="sapUiResponsiveContentPadding">
+	<Page title="{i18n>homePageTitle}">
+		<customHeader >
+			<Bar>
+				<contentLeft>
+				<mvc:XMLView viewName="sap.ui.unified.sample.MenuMenuEventing.MenuMenuEventing"/>
+				</contentLeft>
+				
+				<contentMiddle>
+				<Text text ="{i18n>homePageTitle}"></Text>
+				</contentMiddle>
+			</Bar>
+		</customHeader>
 		<content>
 			<mvc:XMLView viewName="sap.ui.demo.nav.view.MenuPanel"/>
-			<Text text="kjsdfksdjfalkjdfsafd dsfasdf sdf sadfdsfa  sdaf"></Text>
+			<Text text="Home"></Text>
 		</content>
 	</Page>
 </mvc:View>
